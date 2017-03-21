@@ -1,0 +1,16 @@
+{
+  "name": "starpack-instance",
+  "version": "1.0.0",
+  "description": "Base configuration instance for Starpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "starpack",
+    "webpack",
+    "bundle"
+  ],
+  "author": "Popov Gennadiy <commerce@westtrade.tk> (http://westtrade.tk/)",
+  "license": "MIT"
+}
