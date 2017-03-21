@@ -1,0 +1,40 @@
+#! /usr/bin/env node
+const webpack = require('webpack');
+const defaultConfig = require('../config/webpack.config');
+const path = require('path');
+const fs = require('fs');
+
+process.on('SIGINT', process.exit);
+
+const options = {
+	env: 'production',
+};
+
+const configPath = path.resolve('starpack.config.js');
+let userConfig = {};
+
+if (fs.existsSync(configPath)) {
+	const userConfigModule = require(configPath);
+	userConfig = userConfigModule.default || userConfigModule;
+}
+
+const fullConfig = userConfig.webpack
+	? userConfig.webpack(defaultConfig(options), options)
+	: defaultConfig(options);
+
+const serverConfig = Array.isArray(fullConfig)
+	? fullConfig.filter(({target} = {}) => target === 'node')[0]
+	: serverConfig;
+
+process.on('SIGINT', process.exit);
+
+const compilers = webpack(fullConfig);
+const serverInstanceFilter = ({options: {target}}) => { return target === 'node'; };
+
+const serverCompiler = compilers.compilers
+	? compilers.compilers.filter(serverInstanceFilter)[0]
+	: compilers;
+
+const compileServer = () => serverCompiler.run(() => undefined);
+
+compileServer();
