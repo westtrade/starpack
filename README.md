@@ -1,4 +1,4 @@
-![starpack](https://cdn.rawgit.com/westtrade/starpack/b4a625d9/assets/logo.png)
+![starpack](assets/logo.png)
 
 Starpack is build system, based on Nodemon, Webpack, PostCSS - based on backpack fork.
 
