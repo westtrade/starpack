@@ -1,0 +1,19 @@
+{
+  "name": "starpack-angular",
+  "version": "1.0.0",
+  "description": "Is starpack configuration settings for Angular 1.x clients",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/westtrade/starpack.git"
+  },
+  "author": "Popov Gennadiy <commerce@westtrade.tk> (http://westtrade.tk/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/westtrade/starpack/issues"
+  },
+  "homepage": "https://github.com/westtrade/starpack#readme"
+}
