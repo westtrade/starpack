@@ -1,10 +1,10 @@
 {
-  "name": "starpack",
+  "name": "starpack-core",
   "version": "1.0.0",
   "description": "Starpack application instances configurator",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --watch"
   },
   "keywords": [
     "starpack",
@@ -12,5 +12,13 @@
     "bundle"
   ],
   "author": "Popov Gennadiy <commerce@westtrade.tk> (http://westtrade.tk/)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "npm-programmatic": "^0.0.7"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+	"starpack-babel-server": "^1.0.0",
+    "mocha": "^3.2.0"
+  }
 }

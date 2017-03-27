@@ -1,6 +1,6 @@
 {
   "name": "starpack-cli",
-  "version": "0.1.3",
+  "version": "1.0.0",
   "description": "Starpack is a minimalistic build system for isomorphic ECMA >6 applications",
   "repository": "westtrade/starpack",
   "author": "Popov Gennadiy <me@westtrade.tk>",

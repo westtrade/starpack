@@ -1,4 +1,5 @@
 #! /usr/bin/env node
+
 const webpack = require('webpack');
 const defaultConfig = require('../config/webpack.config');
 const path = require('path');

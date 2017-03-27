@@ -1,7 +1,7 @@
 {
-  "name": "starpack-angular",
+  "name": "starpack-babel-server",
   "version": "1.0.0",
-  "description": "Starpack configuration settings for Angular 1.x clients",
+  "description": "Starpack configuration for es6 ready server",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,6 +14,9 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/westtrade/starpack/issues"
+  },
+  "dependencies" : {
+	  "starpack-core": "^1.0.0"
   },
   "homepage": "https://github.com/westtrade/starpack#readme"
 }

@@ -1,4 +1,5 @@
 #! /usr/bin/env node
+
 const webpack = require('webpack');
 const nodemon = require('nodemon');
 // const paths = require('../config/paths');
